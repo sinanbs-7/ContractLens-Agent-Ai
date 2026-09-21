@@ -9,7 +9,7 @@
     "dev": "vite",
     "build:client": "vite build",
     "build:server": "tsc -p tsconfig.server.json",
-    "build": "vite build",
+    "build": "npm run build:client && npm run build:server",
     "start": "node dist/server/index.js",
     "migrate": "tsx scripts/apply-migration.ts"
   },
