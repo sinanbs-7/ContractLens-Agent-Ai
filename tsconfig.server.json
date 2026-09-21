@@ -6,10 +6,12 @@
     "lib": ["ES2022"],
     "skipLibCheck": true,
     "strict": true,
-    "noEmit": true,
+    "noEmit": false,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "outDir": "dist/server",
+    "rootDir": "src/server"
   },
-  "include": ["src/server/**/*", "scripts/**/*"]
+  "include": ["src/server/**/*"]
 }
